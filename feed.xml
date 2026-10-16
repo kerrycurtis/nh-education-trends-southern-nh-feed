@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>NH Education Trends in Southern NH</title>
+  <description>Weekly trends in southern New Hampshire education — enrollment, funding, staffing, and outcomes across the Manchester, Nashua, Derry, Londonderry, and Salem corridor. Hosted by Alex and Jordan.
+
+AI Generated</description>
+  <language>en</language>
+    <itunes:author>Professional Development Inc</itunes:author>
+    <itunes:category text="Education" />
+    <itunes:owner>
+      <itunes:name>Professional Development Inc</itunes:name>
+      <itunes:email>kerry.f.curtis@gmail.com</itunes:email>
+    </itunes:owner>
+  <itunes:explicit>false</itunes:explicit>
+  <atom:link href="https://kerrycurtis.github.io/nh-education-trends-southern-nh-feed/feed.xml" rel="self" type="application/rss+xml"/>
+  <itunes:image href="https://muse.ai/podcasts/media/1337692426099284/cc3e6d6d-b90d-4b83-9a8e-d234fbde9f85/cover.png"/>
+  <image>
+    <url>https://muse.ai/podcasts/media/1337692426099284/cc3e6d6d-b90d-4b83-9a8e-d234fbde9f85/cover.png</url>
+    <title>NH Education Trends in Southern NH</title>
+    <link>https://muse.ai/podcasts/feed/1337692426099284/cc3e6d6d-b90d-4b83-9a8e-d234fbde9f85</link>
+  </image>
+  <item>
+    <title>NH Education Trends in Southern NH — October 16, 2026: The Southern NH Squeeze</title>
+    <description>Alex and Jordan open the new weekly show with the trend pressing on every southern New Hampshire district at once: falling enrollment, universal school choice, and dropping state aid arriving together — and what district leaders can do about it.
+
+Sources — NH Fiscal Policy Institute (Oct 2026), educator workforce report: https://nhfpi.org/resource/new-hampshires-educator-workforce-faces-growing-recruitment-retirement-and-affordability-pressures/ ; Keene Sentinel / Granite State News Collaborative (Aug 2026), EFA cap: https://www.keenesentinel.com/state_news/nh-s-school-voucher-program-expands-to-12-500-students-hundreds-on-wait-list/article_99646690-eb07-4c2c-bf0a-02cfb451d404.html ; Nashua Ink Link (Oct 2026), facilities plan: https://nashua.inklink.news/nashua-school-board-sets-oct-21-presentation-nov-16-vote-on-facilities-plan/ ; Manchester Ink Link (Oct 2026), class sizes and staffing: https://manchester.inklink.news/manchester-schools-see-some-class-size-improvement-but-staffing-pressures-remain/ ; NHED (Sept 2, 2026), 2026 assessment results: https://www.education.nh.gov/news-and-media/nhed-announces-2026-student-assessment-results ; Business NH Magazine, Children&apos;s Scholarship Fund NH on EFA demand: https://www.businessnhmagazine.com/article/nhrsquos-school-choice-program-hits-enrollment-cap-and-has-300-students-on-a-waitlist ; NHED charter school funding documents (FY25–FY27): https://gc.nh.gov/lba/budget/operating_budgets/2026-2027/HF_Division_II/Division II - NHED Charter School Funding Documents - 03-10-25.pdf ; Londonderry sample ballot (per-pupil and proficiency figures): https://www.londonderrynh.gov/DocumentCenter/View/2396/Sample-School-Ballot-PDF?bidId= ; PublicSchoolReview, Manchester charter schools: https://www.publicschoolreview.com/new-hampshire/manchester/charter ; Nashua Ink Link (Oct 2026), library workers rally: https://nashua.inklink.news/nashua-public-library-employees-going-on-100-days-without-new-contract-as-supporters-rally/ . To verify the WMUR Nashua M shortfall report, search WMUR for Nashua school system facing dollar 2M shortfall after state aid drops (Oct 14, 2026). To verify CNHI&apos;s EFA demographic figures, search cnhinews for EFA double percentage low-income recipients Rindge 28.7. To verify teacher salary rankings, search World Population Review average teacher salary by state 2026. Long-view enrollment figures are October 1 census data via the nhschooldata project, sourced from the NH DOE iPlatform: search nhschooldata enrollment trends.
+
+AI Generated</description>
+    <enclosure url="https://muse.ai/podcasts/media/1337692426099284/cc3e6d6d-b90d-4b83-9a8e-d234fbde9f85/ep-514b2080-2d52-4bc7-bc1b-ea784bab24d3.mp3" length="21823141" type="audio/mpeg"/>
+    <guid isPermaLink="false">ep-514b2080-2d52-4bc7-bc1b-ea784bab24d3</guid>
+    <pubDate>Fri, 16 Oct 2026 17:56:05 +0000</pubDate>
+    <itunes:duration>2727</itunes:duration>
+  </item>
+</channel>
+</rss>
