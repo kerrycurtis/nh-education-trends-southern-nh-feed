@@ -1,71 +1,23 @@
-name: Update Apple Podcasts feed
+name: Write redirect stub feed
 
 on:
   schedule:
-    - cron: '30 17 * * *'
+    - cron: '20 12 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-feed:
+  stub:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
-
-      - name: Rebuild feed.xml from upstream
+      - name: Write redirect feed.xml (feed moved to the Education Across the States GitHub organization)
         run: |
-          python3 - <<'PYEOF'
-          import os, re, urllib.request
-
-          UPSTREAM = "https://muse.ai/podcasts/feed/1337692426099284/cc3e6d6d-b90d-4b83-9a8e-d234fbde9f85"
-          PROXY_BASE = "https://kerrycurtis.github.io/nh-education-trends-southern-nh-feed"
-          AUTHOR = "Professional Development Inc"
-          OWNER_EMAIL = "kerry.f.curtis@gmail.com"
-          CATEGORY = "Education"
-
-          req = urllib.request.Request(UPSTREAM, headers={"User-Agent": "Mozilla/5.0"})
-          with urllib.request.urlopen(req, timeout=60) as resp:
-              feed = resp.read().decode("utf-8")
-
-          feed = re.sub(r"\s*<itunes:author>.*?</itunes:author>", "", feed, flags=re.S)
-          feed = re.sub(r"\s*<itunes:category[^/]*/>", "", feed)
-          feed = re.sub(r"\s*<itunes:category[^>]*>.*?</itunes:category>", "", feed, flags=re.S)
-          feed = re.sub(r"\s*<itunes:owner>.*?</itunes:owner>", "", feed, flags=re.S)
-
-          tags = (
-              f"\n    <itunes:author>{AUTHOR}</itunes:author>"
-              f'\n    <itunes:category text="{CATEGORY}" />'
-              f"\n    <itunes:owner>\n      <itunes:name>{AUTHOR}</itunes:name>"
-              f"\n      <itunes:email>{OWNER_EMAIL}</itunes:email>\n    </itunes:owner>"
-          )
-          feed, n = re.subn(r"(<language>[^<]*</language>)", r"\1" + tags, feed, count=1)
-          if n == 0:
-              raise SystemExit("anchor <language> tag not found")
-
-          self_url = PROXY_BASE.rstrip("/") + "/feed.xml"
-          feed = re.sub(
-              r'(<atom:link href=")[^"]*(" rel="self")',
-              r"\g<1>" + self_url + r"\g<2>",
-              feed,
-              count=1,
-          )
-
-          def guids(text):
-              return set(re.findall(r"<guid[^>]*>(.*?)</guid>", text))
-
-          old_guids = guids(open("feed.xml", encoding="utf-8").read()) if os.path.exists("feed.xml") else set()
-          new_guids = guids(feed)
-          if old_guids == new_guids and old_guids:
-              print(f"no change ({len(new_guids)} episodes)")
-          else:
-              with open("feed.xml", "w", encoding="utf-8") as f:
-                  f.write(feed)
-              print(f"updated feed.xml ({len(new_guids)} episodes)")
-          PYEOF
-
+          cp stub-feed.xml feed.xml
+          echo "wrote redirect feed.xml (0 episodes, itunes:new-feed-url -> organization feed)"
       - name: Commit and push if changed
         run: |
           git config user.name "podcast-feed-bot"
@@ -74,6 +26,6 @@ jobs:
             echo "feed.xml unchanged, nothing to commit"
           else
             git add feed.xml
-            git commit -m "Update Apple Podcasts feed"
+            git commit -m "Redirect feed to Education Across the States organization"
             git push
           fi
