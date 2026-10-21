@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>NH Education Trends in Southern NH</title>
+  <description>Weekly trends in southern New Hampshire education — enrollment, funding, staffing, and outcomes across the Manchester, Nashua, Derry, Londonderry, and Salem corridor. Hosted by Alex and Jordan.
+
+AI Generated</description>
+  <language>en</language>
+    <itunes:author>Professional Development Inc</itunes:author>
+    <itunes:category text="Education" />
+    <itunes:owner>
+      <itunes:name>Professional Development Inc</itunes:name>
+      <itunes:email>educationacrossthestates@gmail.com</itunes:email>
+    </itunes:owner>
+  <itunes:explicit>false</itunes:explicit>
+  <atom:link href="https://kerrycurtis.github.io/nh-education-trends-southern-nh-feed/feed.xml" rel="self" type="application/rss+xml"/>
+  <itunes:image href="https://muse.ai/podcasts/media/1337692426099284/cc3e6d6d-b90d-4b83-9a8e-d234fbde9f85/cover.png"/>
+  <itunes:new-feed-url>https://education-across-the-states.github.io/nh-education-trends-southern-nh-feed/feed.xml</itunes:new-feed-url>
+</channel>
+</rss>
